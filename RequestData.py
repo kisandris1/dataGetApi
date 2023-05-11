@@ -3,6 +3,8 @@ import json
 import tempfile
 import ujson
 
+import time
+
 
 def DiabAPIreq(username: str = None, collection: str = None, qtype: str = None, patid: int = None,
                myquery: dict = None, limit: int = None):
@@ -52,5 +54,6 @@ def DiabAPIreq(username: str = None, collection: str = None, qtype: str = None, 
         binary_data = temp_file.read()
 
     finalData = ujson.loads(binary_data)
+
 
     return finalData
