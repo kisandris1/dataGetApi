@@ -8,7 +8,7 @@ import time
 
 def DiabAPIreq(username: str = None, collection: str = None, qtype: str = None, patid: int = None,
                myquery: dict = None, limit: int = None):
-    url = "http://194.163.186.230:81/getData/"
+    url = "https://vmi1293676.contaboserver.net/api/getData/"
 
     if username is None:
         return {"Error": "No username"}
